@@ -1,0 +1,20 @@
+{
+  "plant_type": "humidity_lover",
+  "leaf_yellowing": "none",
+  "leaf_browning": "crispy_tips_edges",
+  "wilting": "no",
+  "leaf_drop": "no",
+  "growth": "normal",
+  "speckled_leaves": "no",
+  "soil_moisture": "moist",
+  "watering_frequency": "regular",
+  "drainage": "good",
+  "light_level": "bright_indirect",
+  "temperature": "heater_vent",
+  "humidity": "dry",
+  "fertiliser": "normal",
+  "soil_crust": "no",
+  "water_dries_fast": "no",
+  "pests_seen": "no",
+  "white_powder": "no"
+}

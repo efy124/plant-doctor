@@ -1,0 +1,11 @@
+id,type,expected,predicted,cf,co_diagnoses,correct,correct_lenient,in_top3,all_required_found,questions_asked,baseline_checklist,baseline_majority,rules_fired
+D01,typical,overwatering,overwatering,0.879,,1,1,1,,20,fungus_gnats,overwatering,R02 R03 R20 R22 R28 R45 R83
+D02,typical,underwatering,underwatering,0.959,,1,1,1,,20,underwatering,overwatering,R05 R06 R24 R25 R26 R27 R45 R63 R65
+D03,typical,insufficient_light,insufficient_light,0.799,,1,1,1,,16,powdery_mildew,overwatering,R11 R40 R41 R44 R85
+D04,typical,excess_light,excess_light,0.94,,1,1,1,,17,excess_light,overwatering,R45 R50 R52
+D05,typical,low_humidity,low_humidity,0.912,,1,1,1,,18,low_humidity,overwatering,R45 R60 R61 R63
+D06,typical,fertiliser_burn,fertiliser_burn,0.882,,1,1,1,,18,fertiliser_burn,overwatering,R13 R14 R45 R63 R66 R70 R71 R84
+D07,typical,nutrient_deficiency,nutrient_deficiency,0.75,,1,1,1,,19,nutrient_deficiency,overwatering,R45 R72 R80
+D08,typical,mealybugs,mealybugs,0.9,,1,1,1,,21,mealybugs,overwatering,R45 R120
+D09,typical,fungus_gnats,fungus_gnats,0.966,,1,1,1,,24,fungus_gnats,overwatering,R01 R03 R22 R28 R45 R83 R140 R141
+D10,typical,root_rot,root_rot,0.934,overwatering,1,1,1,,21,root_rot,overwatering,R03 R07 R20 R21 R22 R28 R30 R31 R32 R34 R45 R83 R104

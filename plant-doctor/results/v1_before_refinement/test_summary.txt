@@ -1,0 +1,49 @@
+PLANT DOCTOR - EVALUATION SUMMARY (TEST set, 32 cases)
+======================================================================
+Knowledge base: 29 questions, 87 rules, 16 diagnoses
+
+1. ACCURACY
+   Primary diagnosis correct (strict) :  96.9%   (target >= 80%)
+   Correct incl. acceptable co-diag.  : 100.0%
+   Expected diagnosis in top 3        : 100.0%
+   Multi-problem cases, both found    : 2/2
+   Accuracy by case type:
+     typical  21/21  (100%)
+     partial   4/4   (100%)
+     noisy     4/4   (100%)
+     multi     1/2   (50%)
+     healthy   1/1   (100%)
+   Mean CF when correct / incorrect   : 0.84 / 0.95
+
+2. BASELINES
+   Majority class ('overwatering')       :  12.5%
+   Flat symptom checklist             :  87.5%
+
+3. RULE COVERAGE AND CONSISTENCY (dev + test cases)
+   Rules fired at least once          : 81/87 (93%)
+   Rules never fired                  : R33, R46, R64, R73, R142, R162
+   KB lint warnings                   : none
+
+4. ORDER INDEPENDENCE AND INTERVIEW PRUNING
+   1600 random answer orders, 0 gave different facts or CFs
+   Interview reached the same conclusion as answering all
+   29 questions in 32/32 cases
+
+5. ROBUSTNESS (30 random trials per level)
+              ---- Plant Doctor ----------------   - Checklist -
+   unknown   correct  abstained  wrong diagnosis   correct  wrong
+       0%      96.9%       0.0%          3.1%       87.5%   12.5%
+      10%      87.0%       8.2%          4.8%       81.7%   18.3%
+      20%      76.4%      19.3%          4.4%       77.4%   22.6%
+      30%      68.9%      25.5%          5.6%       72.2%   27.8%
+      40%      56.6%      37.8%          5.6%       65.0%   35.0%
+      50%      45.1%      47.9%          7.0%       58.0%   42.0%
+      60%      34.3%      60.3%          5.4%       50.1%   49.9%
+
+6. INTERVIEW EFFICIENCY
+   Questions asked: mean 19.3 (min 16, max 24) of 29 available
+
+7. INCORRECT CASES
+   T29 (multi): expected overwatering, got insufficient_light (CF 0.95)  [acceptable]
+
+Per-case results: results/test_results.csv
