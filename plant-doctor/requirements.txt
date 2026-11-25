@@ -1,3 +1,0 @@
-# Only needed to redraw the evaluation charts (evaluate.py).
-# The expert system itself uses only the Python standard library.
-matplotlib
